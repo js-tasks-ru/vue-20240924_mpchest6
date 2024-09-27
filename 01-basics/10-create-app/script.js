@@ -10,11 +10,12 @@ const app = defineComponent({
 
     return {
       formatAsLocaleDateString,
-        }      
-    },
-    template: `
-        <div>Сегодня {{ formatAsLocaleDateString(new Date()) }}</div>
-    `
+    }
+  },
+
+  template: `
+      <div>Сегодня {{ formatAsLocaleDateString(new Date()) }}</div>
+  `
 })
 
 createApp(app).mount('#app')
